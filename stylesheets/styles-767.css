@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('/fonts/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-section {
+    padding: 60px;
+}
+
+.hero-text {
+    font-size: 65px;
+    font-family: gilroy-bold;
+    letter-spacing: -1.65px;
+    line-height: 55px;
+    /* text-align: left; */
+    width: 340px;
+}
+
+.hero-sub-text {
+    font-size: 19px;
+    font-family: gilroy-semibold;
+    letter-spacing: 0px;
+    line-height: 24px;
+    /* white-space: pre-line; */
+    width: 320px;
+    /* text-align: left; */
+}
+
+.button-download-CRED {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding: 16px 28px;
+    /* cursor: none; */
+    margin-top: 35px;
+}
+
+/***********************
+************************
+**Feel special section**
+************************
+***********************/
+
+.feel-special-section {
+    background-position: center center;
+    padding: 195px 60px 90px;
+}
+
+.fst-line1 {
+    font-size: 85px;
+    line-height: 75px;
+    max-width: 80%;
+}
+
+.fst-line2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.fst-line3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.button-explore-rewards {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding: 16px 28px;
+}
+
+/************************
+*************************
+*Brands you love section*
+*************************
+************************/
+
+.brands-you-love-section {
+    padding: 60px;
+}
+
+.brands-you-love-text {
+    font-size: 22px;
+    letter-spacing: -0.11px;
+    line-height: 18px;
+    opacity: 0.9;
+    white-space: pre-line;
+}
+
+.brands-you-love-image {
+    height: 240px;
+    background-position: left center;
+}
+
+/************************
+*************************
+**Money matters section**
+*************************
+************************/
+
+.money-matters-section {
+    background-position: center center;
+    padding: 195px 60px 90px;
+    min-height: 1280px;
+    justify-content: flex-end;
+}
+
+.mm-line1 {
+    font-size: 85px;
+    line-height: 75px;
+    max-width: 80%;
+    white-space: pre-line;
+}
+
+.mm-line2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.mm-line3 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    margin-top: 75px;
+}
+
+.button-mm {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding: 16px 28px;
+}
+
+/************************
+*************************
+**Mobile mockup section**
+*************************
+************************/
+
+.mobile-mockup {
+    padding: 60px;
+}
+
+.mobile-mockup-text1 {
+    font-size: 56px;
+    line-height: 54px;
+    letter-spacing: -1.5px;
+    margin-bottom: 60px;
+    margin-top: 85px;
+    opacity: 0.9;
+    min-width: 60%;
+}
+
+.mobile-mockup-text2 {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 80%;
+}
+
+/************************
+*************************
+*Mockup parallax section*
+*************************
+************************/
+
+.mockup-parallax {
+    display: block;
+    min-height: 50vh;
+}
+
+/************************
+*************************
+*****Security section****
+*************************
+************************/
+
+.security-section {
+    background-position: center center;
+    padding: 195px 60px 90px;
+}
+
+.s-line1 {
+    font-size: 85px;
+    line-height: 75px;
+    max-width: 80%;
+}
+
+.s-line2 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.button-s {
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding: 16px 28px;
+}
+
+/************************
+*************************
+*******Trust section*****
+*************************
+************************/
+
+.trust-section {
+    padding: 60px;
+}
+
+.trust-main-text {
+    font-size: 65px;
+    line-height: 55px;
+    letter-spacing: -1.65px;
+    max-width: 450px;
+}
+
+.trust-side-text-div {
+    font-size: 18px;
+    font-family: gilroy-regular;
+    letter-spacing: 0px;
+    line-height: 28px;
+    margin-top: 20px;
+    max-width: 550px;
+}
+
+/************************
+*************************
+****App store section****
+*************************
+************************/
+
+/************************
+*************************
+*******About section*****
+*************************
+************************/
+
+.about-section {
+    padding: 30px 60px;
+}
+
+/************************
+*************************
+*******Footer section****
+*************************
+************************/
+
+.footer-section {
+    padding: 100px 60px;
+}
+
+.cred-logo-placeholder img {
+    width: 168px;
+}
+
+.security-logo-placeholder {
+    margin-top: 70px;
+}
+
+.security-logo-placeholder img {
+    width: 290px;
+}
+
+.footer-top-center-container, .footer-top-right-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-top-center-container-1, .footer-top-right-container-1 {
+    padding-right: 0;
+    margin-right: 150px;
+}
+
+.footer-top-center-container .head-text, .footer-top-right-container .head-text {
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+

@@ -29,7 +29,7 @@
 body {
     /* background-color: black; */
     /* width: 100%; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .flex-container {
@@ -37,7 +37,7 @@ body {
 }
 
 /****************************
-*****Feel Special Section****
+********Header Section*******
 ****************************/
 
 .header-section {
@@ -95,7 +95,7 @@ body {
 *******Lotus animation*******
 ****************************/
 
-.lotus-animation-placeholder {
+/* .lotus-animation-placeholder {
     min-height: 70%;
     background-image: url(/images/hero-bg-mobile.webp);
     background-repeat: no-repeat;
@@ -103,13 +103,34 @@ body {
     background-size: cover;
 }
 
-.neopop-left-2 {
-    height: 170px;
+@keyframes move-left-2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.neopop-left-2, .neopop-left-1, .neopop-right-1, .neopop-right-2, .neopop-center {
     z-index: 10;
     position: absolute;
-    overflow: clip;
-    transform: translate(-160, 10%);
-}
+    overflow-y: clip;
+    width: 170px;
+    bottom: 0;
+    left: 50%;
+    animation-name: move-left-2;
+} */
+
 
 /****************************
 *****Feel Special Section****
@@ -145,7 +166,7 @@ body {
     opacity: 0.9;
 
     font-size: 65px;
-    font-family: gilroy-bold;
+    font-family: Gilroy-Bold;
     letter-spacing: -1.95px;
     line-height: 58px;
 }
@@ -543,8 +564,16 @@ hr {
     padding-right: 100px;
     margin-bottom: 30px;
     /* margin-right: 100px; */
-    flex: 1;
+    flex: 1;   
 }
+
+/* .collapsible {
+
+}
+
+.collapsed-text {
+
+} */
 
 .footer-bottom-container {
     flex-direction: column;
@@ -570,13 +599,3 @@ hr {
     Media queries
 *********************
 ********************/
-
-@media screen and (min-width: 481px) and 
-(max-width: 767px) {
-
-}
-
-@media screen and (min-width: 768px) and 
-(max-width: 768px) {
-
-}
