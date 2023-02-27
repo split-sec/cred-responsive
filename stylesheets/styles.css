@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('/fonts/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background-color: black; */
+    /* width: 100%; */
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+/****************************
+*****Feel Special Section****
+****************************/
+
+.feel-special-section, .security-section, .trust-section {
+    justify-content: center;
+    background-size: cover;
+    padding: 195px 40px 90px;
+    min-height: 1150px;
+    background-position: right center;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.feel-special-section {
+    background-image: url("/images/deserve-more-bg-mobile.webp");
+}
+
+.feel-special-text-container {
+    flex-direction: column;
+}
+
+.feel-special-text-button-container {
+    flex-direction: column;
+}
+
+.fst-line1, .mm-line1, .s-line1, .trust-main-text {
+    font-family: Gilroy-Bold;
+    font-size: 100px;
+    color:rgb(248, 248, 248);
+    opacity: 0.9;
+
+    font-size: 65px;
+    font-family: gilroy-bold;
+    letter-spacing: -1.95px;
+    line-height: 58px;
+}
+
+.fst-line2, .mm-line2, .s-line2 {
+    font-family: Gilroy-Bold;
+    color:rgb(248, 248, 248);
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin-top: 26px;
+}
+
+.fst-line3, .mm-line3, div.s-line3 {
+    color:rgb(248, 248, 248);
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    white-space: pre-line;
+    max-width: 630px;
+    margin-bottom: 40px;
+}
+
+.button-explore-rewards, .button-mm, .button-s, .button-app-store {
+    background-color: rgb(248, 248, 248);
+    border: none;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    text-decoration: none;
+    font-family: Gilroy-Bold;
+    border-radius: 40px;
+    align-self: flex-start;
+    
+
+    font-size: 18px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    padding: 16px 24px;
+}
+
+.brands-you-love-section {
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px 40px;
+    background-color: rgb(248, 248, 248);
+    color: rgb(33, 36, 38);
+    width: 100vw;
+    position: relative;
+}
+
+.brands-you-love-text {
+    /* font-family: Gilroy-SemiBold;
+    font-size: 24px;
+    margin-bottom: 64px; */
+
+    font-size: 18px;
+    font-family: Gilroy-Bold;
+    letter-spacing: -0.11px;
+    line-height: 18px;
+    opacity: 0.9;
+    white-space: pre-line;
+}
+
+.brands-you-love-image {
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/brands-mobile.png);
+    background-size: contain;
+    height: 240px;
+    margin-top: 35px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/********************
+*********************
+Money matters section
+*********************
+********************/
+
+.money-matters-section {
+    background-image: url(/images/money-matters-bg-mobile.webp);
+    background-size: cover;
+    flex-direction: column;
+    padding: 195px 40px 90px;
+    background-position: right center;
+    min-height: 1350px;
+    justify-content: flex-end;
+}
+
+.money-matters-text-container, .security-container {
+    flex-direction: column;
+}
+
+.mm-line3 {
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+/********************
+*********************
+Mobile Parallax Part
+*********************
+********************/
+
+.mockup-parallax {
+    display: none;
+    min-height: 80vh;
+    background-image: url(/images/neopop-image-mock.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/********************
+*********************
+   Security section
+*********************
+********************/
+
+.security-section {
+    background-image: url(/images/security-bg-mobile.webp);
+}
+
+.security-text-container, .security-text-button-container {
+    flex-direction: column;
+}
+
+/********************
+*********************
+  Trust CRED section
+*********************
+********************/
+
+.trust-section {
+    background-image: url(/images/trust-bg-mobile.webp);
+    padding: 70px 40px;
+    min-height: 100vh;
+}
+
+.trust-main-text {
+    font-size: 55px;
+}
+
+.trust-side-text {
+    flex-direction: column;
+    font-family: Gilroy-Medium;
+    color:rgb(248, 248, 248);
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.trust-side-text-div {
+    margin-top: 20px;
+}
+
+/********************
+*********************
+      Empty div
+*********************
+********************/
+
+.app-store-section {
+    background-image: url(/images/hero-bg.png);
+    padding: 70px 40px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    color:rgb(248, 248, 248);
+    min-height: 100vh;
+}
+
+.app-store-container {
+    flex-direction: column;
+}
+
+.top-container {
+    flex-direction: column;
+}
+
+.left-container, .right-container {
+    flex-direction: column;
+}
+
+.content {
+    flex-direction: column;
+}
+
+#app-store-rating {
+    font-family: Gilroy-Bold;
+    font-size: 90px;
+    padding-right: 16px;
+    opacity: 0.9;
+}
+
+#app-store-text {
+    font-family: Gilroy-Bold;
+    font-size: 31px;
+    padding-left: 16px;
+    opacity: 0.9;
+    text-align: left;
+    line-height: 32px;
+}
+
+.button-app-store {
+    display: none;
+}
+
+/********************
+*********************
+      Empty div
+*********************
+********************/
+
+@media screen and (min-width: 481px) and 
+(max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and 
+(max-width: 768px) {
+
+}
