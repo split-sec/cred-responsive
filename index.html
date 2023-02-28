@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="/stylesheets/global.css">
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link href="/stylesheets/styles-767.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 767px)">
-    <link href="/stylesheets/styles-900.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 900px)">
-    <link href="/stylesheets/styles-1630.css" rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1630px)">
+    <link href="/stylesheets/styles-900.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1279px)">
+    <link href="/stylesheets/styles-beyond-1279.css" rel="stylesheet" media="screen and (min-width: 1280px)">
+    <script defer src="/scripts/activate-lotus-animation.js">
+
+    </script>
     <link rel="icon" type="image/x-icon" href="/images/logo.ico">
 </head>
 <body>
@@ -43,6 +46,16 @@
     <!-- <div class="lotus-animation-placeholder">
         <img class="neopop-left-2" src="/images/neopop-left-2.png">
     </div> -->
+
+    <div class="animation-section">
+        <div class="animation-placeholder active">
+            <img class="left-image-2 anime" src="/images/neopop-left-2.png">
+            <img class="right-image-2 anime" src="/images/neopop-right-2.png">
+            <img class="left-image-1 anime" src="/images/neopop-left-1.png">
+            <img class="right-image-1 anime" src="/images/neopop-right-1.png">
+            <img class="center-image anime" src="/images/neopop-center.png">
+        </div>
+    </div>    
 
     <div class="feel-special-section flex-container">
         <div class="feel-special-text-container flex-container">
@@ -443,5 +456,19 @@
 
         </div>
     </div>
+
+
+    <!-- <script>
+        window.addEventListener('scroll', () => {
+            // console.log("here");
+            let scrollPos = window.scrollY;
+            let placeholderElem = document.getElementsByClassName('animation-placeholder')[0];
+
+            if(scrollPos > 1000 && placeholderElem.style.display === "none") {
+                console.log("here");
+                placeholderElem.classList.add = "active;"
+            }
+        });
+    </script> -->
 </body>
 </html>

@@ -109,41 +109,107 @@ a {
 *******Lotus animation*******
 ****************************/
 
-/* .lotus-animation-placeholder {
-    min-height: 70%;
+.animation-section {
     background-image: url(/images/hero-bg-mobile.webp);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
 }
 
-@keyframes move-left-2 {
+.active {
+    display: block;
+}
+
+.anime {
+    position: absolute;
+    width: 170px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -100vh;
+    opacity: 0;
+}
+
+/* .left-image-2 {
+    animation: animate-left-image-2 2s ease 0s forwards;
+}
+
+.right-image-2 {
+    animation: animate-right-image-2 2s ease 0s forwards;
+}
+
+.left-image-1 {
+    animation: animate-left-image-1 2s ease 0s forwards;
+}
+
+.right-image-1 {
+    animation: animate-right-image-1 2s ease 0s forwards;
+}
+
+.center-image {
+    animation: animate-center-image 2s ease 0s forwards;
+} */
+
+@keyframes animate-left-image-2 {
     0% {
         opacity: 0;
     }
-    25% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
     100% {
+        bottom: -85px;
+        left: -7.5%;
         opacity: 1;
+        transform: translate(0);
     }
 }
 
-.neopop-left-2, .neopop-left-1, .neopop-right-1, .neopop-right-2, .neopop-center {
-    z-index: 10;
-    position: absolute;
-    overflow-y: clip;
-    width: 170px;
-    bottom: 0;
-    left: 50%;
-    animation-name: move-left-2;
-} */
+@keyframes animate-right-image-2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        bottom: -85px;
+        right: -7.5%;
+        left: auto;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes animate-left-image-1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        bottom: -50px;
+        left: 12.5%;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes animate-right-image-1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        bottom: -50px;
+        right: 12.5%;
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes animate-center-image {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        bottom: -15px;
+        opacity: 1;
+        /* transform: translate(0); */
+    }
+}
 
 
 /****************************
@@ -194,7 +260,7 @@ a {
     margin-top: 26px;
 }
 
-.fst-line3, .mm-line3, div.s-line3 {
+.fst-line3, .mm-line3, .s-line3 {
     color:rgb(248, 248, 248);
     font-family: Gilroy-Regular;
     font-size: 14px;

@@ -294,19 +294,22 @@
     flex: 1;
 }
 
+.cred-logo-placeholder {
+    width: 168px;
+}
+
 .cred-logo-placeholder img {
     width: 168px;
 }
 
 .security-logo-placeholder {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 405px;
 }
 
 .security-logo-placeholder img {
-    margin-top: 70px;
-    margin-bottom: 25px;
-    width: 290px;
+    width: 405px;
 }
 
 .footer-top-center-container, .footer-top-right-container {
@@ -354,4 +357,11 @@
 
 .footer-bottom-right-container div {
     margin-left: 20px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1279px) {
+    .hero-text {
+        font-size: 97px;
+        line-height: 107px;
+    }
 }
