@@ -229,5 +229,69 @@
     background-image: url(/images/trust-bg.jpg);
     background-position: cover;
     background-size: right-bottom;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.trust-main-text {
+    font-size: 60px;
+    letter-spacing: -1.15px;
+    line-height: 64px;
+    white-space: pre-line;
+    opacity: 0.9;
+    display: flex;
+    align-self: flex-end;
+    flex: 1;
+}
+
+.trust-side-text {
+    margin-left: 30px;
+    font-size: 18px;
+    padding-top: 20px;
+    font-family: Gilroy-Regular;
+    letter-spacing: 0px;
+    line-height: 28px;
+    max-width: 550px;
+    opacity: 0.9;
+    align-content: flex-end;
+    flex: 1;
+}
+
+/************************
+*************************
+******About section******
+*************************
+************************/
+
+.about-section {
+    padding: 30px 60px;
+}
+
+/************************
+*************************
+******Footer section*****
+*************************
+************************/
+
+.footer-section {
+    padding: 100px 60px;
+}
+
+.cred-logo-placeholder img {
+    width: 168px;
+}
+
+.security-logo-placeholder {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.security-logo-placeholder img {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    width: 290px;
+}
+
+.contain-footer-elements {
+    flex-direction: row;
 }
