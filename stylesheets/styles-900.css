@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('/fonts/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***********************
+************************
+*****Header section*****
+************************
+***********************/
+
+.header-section {
+    padding: 60px 50px 100px;
+    min-height: 100vh;
+}
+
+.hero-container {
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 82px;
+    line-height: 92px;
+    letter-spacing: -3px;
+    margin-top: 100px;
+}
+
+.hero-sub-text {
+    font-family: Gilroy-Bold;
+    font-size: 25px;
+    letter-spacing: -0.2px;
+    line-height: 38px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.button-download-CRED {
+    padding: 20px 65px;
+    font-size: 24px;
+    font-family: Gilroy-Bold;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    margin: 58px auto 0;
+}
+
+/***********************
+************************
+**Feel special section**
+************************
+***********************/
+
+.feel-special-section {
+    padding: 100px;
+    background-image: url(/images/deserve-more-bg.webp);
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.fst-line1 {
+    max-width: 670px;
+    font-size: 100px;
+    font-family: Gilroy-Bold;
+    letter-spacing: -3.15px;
+    line-height: 96px;
+    opacity: 0.9;
+}
+
+.fst-line2 {
+    font-size: 32px;
+    font-family: Gilroy-Bold;
+    letter-spacing: -0.2px;
+    line-height: 38px;
+    white-space: pre-line;
+    max-width: 630px;
+    margin-top: 16px;
+}
+
+.fst-line3 {
+    font-size: 18px;
+    font-family: Gilroy-SemiBold;
+    letter-spacing: 0px;
+    line-height: 28px;
+    max-width: 630px;
+    margin-bottom: 40px;
+}
+
+.button-explore-rewards, .button-mm, .button-s {
+    text-align: center;
+    padding: 20px 65px;
+    font-size: 24px;
+    font-family: Gilroy-Bold;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    border-radius: 40px;
+}
+
+/************************
+*************************
+*Brands you love section*
+*************************
+************************/
+
+.brands-you-love-section {
+    padding: 60px 100px;
+}
+
+.brands-you-love-text {
+    font-size: 24px;
+    font-family: Gilroy-SemiBold;
+    letter-spacing: 0px;
+    line-height: 38px;
+}
+
+.brands-you-love-image {
+    background-image: url(/images/brands-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+/************************
+*************************
+**Money matters section**
+*************************
+************************/
+
+.money-matters-section, .security-section {
+    padding: 100px;
+    background-image: url(/images/money-matters-bg.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.mm-line1, .s-line1 {
+    font-size: 100px;
+    font-family: Gilroy-Bold;
+    letter-spacing: -3.15px;
+    line-height: 96px;
+    opacity: 0.9;
+    max-width: 670px;
+}
+
+.mm-line2, .s-line2 {
+    font-size: 32px;
+    font-family: Gilroy-Bold;
+    letter-spacing: -0.2px;
+    line-height: 38px;
+    max-width: 630px;
+    margin-top: 16px;
+}
+
+.mm-line3 {
+    font-size: 18px;
+    font-family: Gilroy-SemiBold;
+    letter-spacing: 0px;
+    line-height: 28px;
+    max-width: 630px;
+    margin-bottom: 40px;
+}
+
+/************************
+*************************
+*Mockup parallax section*
+*************************
+************************/
+
+.mockup-parallax {
+    display: block;
+    min-height: 500px;
+}
+
+/************************
+*************************
+*****Security section****
+*************************
+************************/
+
+.security-section {
+    background-image: url(/images/security-bg.webp);
+}
+
+.s-line3 {
+    font-size: 18px !important; 
+    font-family: Gilroy-SemiBold !important;
+    letter-spacing: 0px !important;
+    line-height: 28px !important;
+    max-width: 630px !important;
+    margin-bottom: 40px !important;
+}
+
+/************************
+*************************
+******Trust section******
+*************************
+************************/
+
+.trust-section {
+    padding: 200px 100px;
+    min-height: 100vh;
+    background-image: url(/images/trust-bg.jpg);
+    background-position: cover;
+    background-size: right-bottom;
+    flex-direction: column;
+}

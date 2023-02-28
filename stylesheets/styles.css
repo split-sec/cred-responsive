@@ -262,6 +262,10 @@ Money matters section
     flex-direction: column;
 }
 
+.money-matters-text-button-container {
+    flex-direction: column;
+}
+
 .mm-line3 {
     margin-top: 75px;
     margin-bottom: 40px;

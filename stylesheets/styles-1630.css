@@ -31,7 +31,6 @@
     display: flex;
 }
 
-
 /****************************
 *****Feel Special Section****
 ****************************/
@@ -44,10 +43,6 @@
     min-height: 100vh;
     padding: 125px 475px 180px 200px;
   
-}
-
-.feel-special-container {
-    flex-direction: column;
 }
 
 .feel-special-text-container {
@@ -93,33 +88,6 @@
     padding: 20px 65px;
     align-self: flex-start;
 }
-
-/* @media screen and (min-width: 767px) and (max-width: 992px) {
-    .feel-special-section {
-        padding: 50px;
-        min-height: 100vh;
-        width: 100vw;
-        background-position-x: 80%;
-        background-clip: border-box;
-    }
-
-    .fst-line1 {
-        max-width: 670px;
-    }
-
-    .fst-line3 {
-        font-size: 12px;
-    }
-
-    .button-explore-rewards {
-        font-size: 14px;
-        border-radius: 40px;
-        padding: 10px 35px;
-        align-self: flex-start;
-    }
-} */
-
-
 
 /****************************
 ***Brands you love section***
