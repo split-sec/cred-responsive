@@ -37,6 +37,14 @@
     min-height: 100vh;
 }
 
+.fixed-navbar-links {
+    display: block;
+}
+
+.navbar-btn {
+    display: none;
+}
+
 .hero-container {
     align-items: center;
 }
@@ -277,6 +285,15 @@
     padding: 100px 60px;
 }
 
+.footer-top-container {
+    flex-direction: row;
+    flex: 1;
+}
+
+.contain-footer-elements {
+    flex: 1;
+}
+
 .cred-logo-placeholder img {
     width: 168px;
 }
@@ -292,6 +309,49 @@
     width: 290px;
 }
 
-.contain-footer-elements {
+.footer-top-center-container, .footer-top-right-container {
     flex-direction: row;
+}
+
+.footer-top-center-container-1, .footer-top-right-container-1,
+.footer-top-center-container-2, .footer-top-right-container-2 {
+    padding-right: 0;
+}
+
+.footer-top-center-container-1, .footer-top-right-container-1 {
+    margin-right: 150px;
+}
+
+.body-text {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.footer-text-margin {
+    margin-bottom: 10px;
+}
+
+.footer-bottom-container {
+    flex-direction: row;
+    align-items: first baseline;
+}
+
+.copyright-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-left-container {
+    flex: 1;
+}
+
+.footer-bottom-right-container {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.footer-bottom-right-container div {
+    margin-left: 20px;
 }
