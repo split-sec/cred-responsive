@@ -11,6 +11,7 @@ function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+    slideIndex = n;
     slides[n-1].style.display = "block";
     dots[n-1].className += " active";
 } 

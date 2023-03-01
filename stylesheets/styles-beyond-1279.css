@@ -505,8 +505,28 @@ hr {
     opacity: 0.5;
 }
 
-/***************
-****************
-Carousel section
-****************
-***************/
+/**************************
+***************************
+Media query for beyond 1630
+***************************
+**************************/
+
+@media screen and (min-width: 1631px) and (max-width: 2400px) {
+    .hero-text {
+        font-family: Gilroy-Bold;
+        font-size: 150px;
+        letter-spacing: -4.5px;
+        line-height: 150px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .fst-line1 {
+        font-size: 100px;
+        font-family: gilroy-bold;
+        letter-spacing: -3.15px;
+        line-height: 96px;
+        white-space: pre-line;
+        opacity: 0.9;
+    }
+}

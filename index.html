@@ -12,9 +12,28 @@
     <link href="/stylesheets/styles-beyond-1279.css" rel="stylesheet" media="screen and (min-width: 1280px)">
     <script defer src="/scripts/activate-lotus-animation.js"></script>
     <script defer src="/scripts/text-slideshow.js"></script>
+    <script defer src="/scripts/show-navbar.js"></script>
+    <script defer src="/scripts/toggle-collapsible.js"></script>
+
     <link rel="icon" type="image/x-icon" href="/images/logo.ico">
 </head>
 <body>
+
+    <div class="float-navbar-placeholder">
+        <div class="float-navbar flex-container">
+            <img src="/images/cred-logo.png">
+    
+            <div class="fixed-navbar-links">
+                <a href="#">credit score check</a>
+                <a href="#">CRED pay</a>
+            </div>
+    
+            <div class="navbar-btn">
+                <img src="/images/menu-burger-white.svg">
+            </div>
+        </div>
+    </div>
+
     <div class="header-section flex-container">
         <div class="fixed-navbar flex-container">
             <img src="/images/cred-logo.png">
@@ -216,8 +235,8 @@
             <div class="slideshow-container">
 
                 <div class="mySlides">
-                    <div class="quote">"i would say one of the best platforms to manage your credit card payments with lot of advantages and rewards. you can even pay rent to your owner using credit card. that's really cool. thanks for all the awesomeness. keep inventing !!"</div>
-                    <div class="author">jagadeeswar reddy singam</div>
+                    <div class="quote">"this is a great app loaded with functionality and simplicity yet elegant and intuitive. a must have for the plastic money users. keeps me in financial discipline and helps me take the billing and payment worries out of my mind"</div>
+                    <div class="author">ranesh bhattacharya</div>
                 </div>
               
                 <div class="mySlides">
@@ -236,10 +255,9 @@
                 </div>
                 
                 <div class="mySlides">
-                    <div class="quote">"this is a great app loaded with functionality and simplicity yet elegant and intuitive. a must have for the plastic money users. keeps me in financial discipline and helps me take the billing and payment worries out of my mind"</div>
-                    <div class="author">ranesh bhattacharya</div>
+                    <div class="quote">"i would say one of the best platforms to manage your credit card payments with lot of advantages and rewards. you can even pay rent to your owner using credit card. that's really cool. thanks for all the awesomeness. keep inventing !!"</div>
+                    <div class="author">jagadeeswar reddy singam</div>
                 </div>
-                
             </div>
               
             <div class="dot-container">
@@ -425,8 +443,11 @@
                 <div class="footer-top-center-container flex-container">
 
                     <div class="footer-top-center-container-1 flex-container">
-                        <div class="head-text collapsible">
-                            products
+                        <div class="head-text collapsible" onclick="toggleView(0)">
+                            <div class="contain-head flex-container">
+                                <div>products</div>
+                                <div>+</div>
+                            </div>
                         </div>
                         <div class="body-text footer-body-text collapsed-text">
                             <div class="footer-text-margin">CRED pay</div>
@@ -435,8 +456,11 @@
                     </div>
 
                     <div class="footer-top-center-container-2 flex-container">
-                        <div class="head-text collapsible">
-                            CRED
+                        <div class="head-text collapsible" onclick="toggleView(1)">
+                            <div class="contain-head flex-container">
+                                <div>CRED</div>
+                                <div>+</div>
+                            </div>
                         </div>
                         <div class="body-text footer-body-text collapsed-text">
                             <div class="footer-text-margin">about</div>
@@ -451,10 +475,13 @@
                 <div class="footer-top-right-container flex-container">
 
                     <div class="footer-top-right-container-1 flex-container">
-                        <div class="head-text collapsible">
-                            resources
+                        <div class="head-text collapsible" onclick="toggleView(2)">
+                            <div class="contain-head flex-container">
+                                <div>resources</div>
+                                <div>+</div>
+                            </div>
                         </div>
-                        <div class="body-text footer-body-text">
+                        <div class="body-text footer-body-text collapsed-text">
                             <div class="footer-text-margin">articles</div>
                             <div class="footer-text-margin">blogs</div>
                             <div class="footer-text-margin">calculators</div>
@@ -464,10 +491,13 @@
                     </div>
 
                     <div class="footer-top-right-container-2 flex-container">
-                        <div class="head-text">
-                            policy
+                        <div class="head-text collapsible" onclick="toggleView(3)">
+                            <div class="contain-head flex-container">
+                                <div>policy</div>
+                                <div>+</div>
+                            </div>
                         </div>
-                        <div class="body-text footer-body-text">
+                        <div class="body-text footer-body-text collapsed-text">
                             <div class="footer-text-margin">security</div>
                             <div class="footer-text-margin">transaction & user verification</div>
                             <div class="footer-text-margin">google API disclosure</div>
@@ -498,17 +528,139 @@
     </div>
 
 
-    <!-- <script>
-        window.addEventListener('scroll', () => {
-            // console.log("here");
-            let scrollPos = window.scrollY;
-            let placeholderElem = document.getElementsByClassName('animation-placeholder')[0];
+    
 
-            if(scrollPos > 1000 && placeholderElem.style.display === "none") {
-                console.log("here");
-                placeholderElem.classList.add = "active;"
-            }
-        });
-    </script> -->
 </body>
 </html>
+
+
+
+<!----------------------------------------------------->
+<!----------------------------------------------------->
+<!----Footer part before adding toggle functionality--->
+<!------------Have it for future purposes-------------->
+<!----------------------------------------------------->
+<!----------------------------------------------------->
+<!--
+    <div class="footer-section">
+
+        <!-- <div class="footer-top-left-container flex-container">
+            <div class="cred-logo-placeholder">
+                <img src="/images/cred-logo-horizontal.webp">
+            </div>
+
+            <div class="security-logo-placeholder">
+                <img src="/images/security-logos.webp">
+            </div>
+
+            <div class="cred-encryption-text flex-container">
+                <div class="head-text cred-guarantee-text">
+                    complete security. no asterisks.
+                </div>
+                <div class="body-text cred-guarantee-body">
+                    CRED encrypts all data and transactions to
+                    ensure a completely secure experience for our members.
+                </div>
+            </div>
+        </div> \-\->
+
+        <div class="footer-top-container flex-container"> 
+            <!--These lines were modified\-\->
+            <div class="footer-top-left-container flex-container">
+                <div class="cred-logo-placeholder">
+                    <img src="/images/cred-logo-horizontal.webp">
+                </div>
+    
+                <div class="security-logo-placeholder">
+                    <img src="/images/security-logos.webp">
+                </div>
+    
+                <div class="cred-encryption-text flex-container">
+                    <div class="head-text cred-guarantee-text">
+                        complete security. no asterisks.
+                    </div>
+                    <div class="body-text cred-guarantee-body">
+                        CRED encrypts all data and transactions to
+                        ensure a completely secure experience for our members.
+                    </div>
+                </div>
+            </div>
+            <!--These lines were modified\-\->
+
+            <div class="contain-footer-elements flex-container">
+                <div class="footer-top-center-container flex-container">
+
+                    <div class="footer-top-center-container-1 flex-container">
+                        <div class="head-text collapsible" onclick="toggleView(0)">
+                            products 
+                        </div>
+                        <div class="body-text footer-body-text collapsed-text">
+                            <div class="footer-text-margin">CRED pay</div>
+                            <div class="footer-text-margin">credit score check</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-center-container-2 flex-container">
+                        <div class="head-text collapsible" onclick="toggleView(1)">
+                            CRED
+                        </div>
+                        <div class="body-text footer-body-text collapsed-text">
+                            <div class="footer-text-margin">about</div>
+                            <div class="footer-text-margin">careers</div>
+                            <div class="footer-text-margin">IPL</div>
+                            <div class="footer-text-margin">customer care</div>  
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-top-right-container flex-container">
+
+                    <div class="footer-top-right-container-1 flex-container">
+                        <div class="head-text collapsible" onclick="toggleView(2)">
+                            resources
+                        </div>
+                        <div class="body-text footer-body-text collapsed-text">
+                            <div class="footer-text-margin">articles</div>
+                            <div class="footer-text-margin">blogs</div>
+                            <div class="footer-text-margin">calculators</div>
+                            <div class="footer-text-margin">credit card payment guide</div>
+                            <div class="footer-text-margin">credit score guide</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-right-container-2 flex-container">
+                        <div class="head-text collapsible" onclick="toggleView(3)">
+                            policy
+                        </div>
+                        <div class="body-text footer-body-text collapsed-text">
+                            <div class="footer-text-margin">security</div>
+                            <div class="footer-text-margin">transaction & user verification</div>
+                            <div class="footer-text-margin">google API disclosure</div>
+                            <div class="footer-text-margin">UPI faq & grievances</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom-container flex-container">
+
+            <div class="footer-bottom-left-container">
+                <div class="body-text copyright-text">
+                    copyright © 2020-22 Dreamplug Technologies Pvt Ltd.
+                </div>
+            </div>
+
+            <div class="footer-bottom-right-container">
+                <div class="body-text">
+                    privacy policy     | terms and conditions    | returns and refund
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+-->
