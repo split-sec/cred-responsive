@@ -116,6 +116,7 @@ a {
     margin-top: 100px;
     line-height: 47.5px;
     letter-spacing: -1.65px;
+    width: 270px;
 }
 
 .hero-sub-text {
@@ -704,12 +705,26 @@ Mobile Parallax Part
     margin-bottom: 70px;
 }
 
-hr {
+.hr-rbg {
     opacity: 0.5;
+    margin-bottom: 50px;
 }
 
-.special-about-content {
-    margin-top: 60px;
+.special-about-content a {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    border-right: 1px solid rgb(246, 246, 246);
+    color:rgb(248, 248, 248);
+    padding: 0 12px;
+}
+
+.special-about-content a:first-child {
+    padding: 0 12px 0 0;
+}
+
+.special-about-content a:last-child {
+    border-right: none;
 }
 
 /********************
@@ -732,10 +747,32 @@ hr {
     flex-direction: column;
 }
 
+.expand-icon {
+    width: 12px;
+    height: 12px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.expand-icon-active {
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
 .footer-top-left-container {
     flex-direction: column;
     flex: 1;
     margin-right: 50px;
+}
+
+.footer-text-margin {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    padding-left: 15px;
 }
 
 .cred-logo-placeholder img {
@@ -767,7 +804,6 @@ hr {
 
 .contain-footer-elements {
     flex-direction: column;
-    margin-bottom: 75px;
     flex: 1;
 }
 
@@ -786,17 +822,25 @@ hr {
 .footer-top-center-container-1, .footer-top-center-container-2,
 .footer-top-right-container-1, .footer-top-right-container-2 {
     flex-direction: column;
-    margin-bottom: 30px;
     flex: 1;   
+}
+
+.footer-top-right-container-2 {
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
 }
 
 .contain-head {
     justify-content: space-between;
+    line-height: 32px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .collapsible {
     border-top: 0.5px solid rgb(255, 255, 255);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    padding-top: 15px;
 }
 
 .collapsed-text {
@@ -819,7 +863,26 @@ hr {
     font-size: 12px;
     letter-spacing: normal;
     opacity: 0.5;
-    margin: 30px 0;
+    line-height: 32px;
+
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    padding: 0;
+}
+
+.rbg01:first-child {
+    padding: 0px 15px 0px 0px;
+}
+
+.rbg01 {
+    padding: 0px 15px 0px 15px;
+    border-right: 1px solid rgb(246, 246, 246);
+}
+
+.rbg01:last-child {
+    border-right: none;
 }
 
 /********************
