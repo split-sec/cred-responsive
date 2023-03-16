@@ -4,7 +4,7 @@ let previousY = window.scrollY;
 window.addEventListener('scroll', () => {
     let currentY = window.scrollY;
 
-    if(currentY > 1000) {
+    if(currentY > 800) {
         if((currentY - previousY) < 0) {
             if(!floatElem.className.includes("navbar-active")) {
                 floatElem.className = floatElem.className.replace("float-navbar-placeholder", "float-navbar-placeholder navbar-active");
