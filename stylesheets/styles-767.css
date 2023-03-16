@@ -140,12 +140,14 @@
     font-size: 85px;
     line-height: 75px;
     max-width: 80%;
+    letter-spacing: -3.15px;
 }
 
 .fst-line2 {
     font-size: 24px;
     line-height: 34px;
     margin-top: 16px;
+    letter-spacing: -0.2px;
 }
 
 .fst-line3 {
@@ -175,7 +177,6 @@
     letter-spacing: -0.11px;
     line-height: 18px;
     opacity: 0.9;
-    white-space: pre-line;
 }
 
 .brands-you-love-image {
@@ -200,12 +201,14 @@
     font-size: 85px;
     line-height: 75px;
     max-width: 80%;
-    white-space: pre-line;
+    letter-spacing: -3.15px;
 }
 
 .mm-line2 {
     font-size: 24px;
     line-height: 34px;
+    margin-top: 16px;
+    letter-spacing: -0.2px;
 }
 
 .mm-line3 {
@@ -213,6 +216,7 @@
     line-height: 22px;
     letter-spacing: 0.2px;
     margin-top: 75px;
+    white-space: unset;
 }
 
 .button-mm {
@@ -240,6 +244,7 @@
     margin-top: 85px;
     opacity: 0.9;
     min-width: 60%;
+    white-space: pre-line;
 }
 
 .mobile-mockup-text2 {
@@ -303,6 +308,7 @@
     line-height: 55px;
     letter-spacing: -1.65px;
     max-width: 450px;
+    padding-bottom: 80px;
 }
 
 .trust-side-text-div {
@@ -319,6 +325,33 @@
 ****App store section****
 *************************
 ************************/
+
+.app-store-section {
+    padding: 100px 60px;
+}
+
+#app-store-rating {
+    font-size: 120px;
+}
+
+.content {
+    white-space: unset;
+}
+
+#app-store-text {
+    white-space: pre-line;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.rating-placeholder {
+    padding-bottom: 70px;
+}
+
+.rating-ios {
+    width: 150px;
+    height: 23px;
+}
 
 /************************
 *************************
@@ -346,6 +379,7 @@
 
 .security-logo-placeholder {
     margin-top: 70px;
+    margin-bottom: 25px;
 }
 
 .security-logo-placeholder img {
@@ -365,5 +399,18 @@
 .footer-top-center-container .head-text, .footer-top-right-container .head-text {
     line-height: 32px;
     margin-bottom: 20px;
+}
+
+.collapsible {
+    border: none;
+}
+
+.footer-top-center-container-1, .footer-top-center-container-2,
+.footer-top-right-container-1, .footer-top-right-container-2 {
+    border: none;
+}
+
+.collapsed-text {
+    display: block;
 }
 
