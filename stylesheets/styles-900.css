@@ -312,13 +312,55 @@
     line-height: 45px;
 }
 
-.left-container, .right-container {
+.left-container {
     padding-right: 35px;
 }
 
+.right-container {
+    padding-left: 35px;
+}
+
 .button-app-store {
+    width: 285px;
+
     display: flex;
-    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-app-store img {
+    width: 30px;
+}
+
+.button-app-store p {
+    padding-left: 8px;
+    font-size: 20px;
+    color: #080808
+}
+
+.bottom-container {
+    margin-top: 60px;
+}
+
+.dot-container {
+    padding: 0;
+    margin: auto;
+}
+
+.quote {
+    font-size: 18px;
+    padding-bottom: 32px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.author {
+    font-size: 18px;
+    text-align: center;;
+}
+
+.common-download-btn {
+    display: none;
 }
 
 /************************
@@ -359,13 +401,13 @@
 }
 
 .security-logo-placeholder {
-    margin-top: 100px;
-    margin-bottom: 40px;
-    width: 405px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    width: 290px;
 }
 
 .security-logo-placeholder img {
-    width: 405px;
+    width: 290px;
 }
 
 .footer-top-center-container, .footer-top-right-container {
@@ -414,6 +456,55 @@
 .footer-bottom-right-container div {
     margin-left: 20px;
 }
+
+/* look out */
+
+.footer-top-center-container, .footer-top-right-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-top-center-container-1, .footer-top-right-container-1 {
+    padding-right: 0;
+    margin-right: 150px;
+}
+
+.footer-top-center-container .head-text, .footer-top-right-container .head-text {
+    line-height: 32px;
+    margin-bottom: 0;
+}
+
+.collapsible {
+    border: none;
+}
+
+.footer-top-center-container-1, .footer-top-center-container-2,
+.footer-top-right-container-1, .footer-top-right-container-2 {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.collapsed-text {
+    display: block;
+}
+
+.footer-text-margin {
+    padding-left: 0px;
+}
+
+.expand-icon {
+    display: none;
+}
+
+.copyright-text {
+    line-height: normal;
+}
+
+.footer-bottom-right-container {
+    line-height: 22px;
+}
+
+
 
 @media screen and (min-width: 901px) and (max-width: 1279px) {
     .hero-text {
