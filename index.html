@@ -58,9 +58,11 @@
                 <a href="#">CRED pay</a>
             </div>
     
-            <div class="navbar-btn">
-                <img src="/images/menu-burger-white.svg">
-            </div>
+            <button class="hamburger hamburger--collapse hamburger--elastic" type="button" onclick="toggleNavbar(0)">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>  
         </div>
     </div>
 
@@ -74,9 +76,11 @@
                 <a href="#">CRED pay</a>
             </div>
 
-            <div class="navbar-btn">
-                <img src="/images/menu-burger-white.svg">
-            </div>
+            <button class="hamburger hamburger--collapse hamburger--elastic" type="button" onclick="toggleNavbar(1)">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button> 
         </div>
 
         <!-- Hero section -->
@@ -198,8 +202,7 @@
         </div>
         
         <div class="security-text-button-container flex-container">
-            <div class="s-line3">
-                CRED ensures that all your personal data and transactions are encrypted, and secured so what’s yours remains only yours. there’s no room for mistakes because we didn’t leave any.
+            <div class="s-line3">CRED ensures that all your personal data and transactions are encrypted, and secured so what’s yours remains only yours. there’s no room for mistakes because we didn’t leave any.
             </div>
 
             <button class="button-s">Become a member</button>
@@ -208,8 +211,7 @@
 
     <!-- Trust Section -->    
     <div class="trust-section flex-container">
-        <div class="trust-main-text">the story 
-            of 
+        <div class="trust-main-text">the story of 
             CRED 
             begins 
             with trust.
@@ -329,7 +331,7 @@
                 about CRED
             </div>
             <div class="body-text">
-                CRED is a members only credit card bill payment platform that rewards
+                CRED is a members only <a href="#" class='underline'>credit card bill payment</a> platform that rewards
                 its members for clearing their credit card bills on time. CRED members get
                 access to exclusive rewards and experiences from premier brands upon clearing
                 their credit card bills on CRED.
@@ -370,7 +372,7 @@
                 what do you get as a CRED Member?
             </div>
             <div class="body-text">
-                as a CRED member, you instantly make your credit card payment experience hassle-free by unlocking
+                as a CRED member, you instantly make your <a href="#" class='underline'>credit card payment</a> experience hassle-free by unlocking
                 several perks only available to CRED members.
                 <br>
                 - seamless bill payment experience through modes like upi, net banking and debit cards
@@ -385,7 +387,7 @@
                 <br>
                 - manage multiple credit cards on a single portal
                 <br>
-                - keep a realtime check on your credit score
+                - keep a realtime check on your <a href='#' class="'underline">credit score</a>
             </div>
         </div>
 
@@ -397,7 +399,7 @@
                 you can apply to be a member by signing up on CRED with your name
                 and valid mobile number(issued within India). CRED is India’s most
                 trustworthy and creditworthy community. This means we are selective
-                about the members we take. For membership an Experian credit score
+                about the members we take. For membership an <a href='#' class='underline'>Experian credit score</a>
                 of 750 or above is mandatory.
             </div>
         </div>
@@ -407,14 +409,14 @@
                 how to know your credit score?
             </div>
             <div class="body-text">
-                upon becoming a member, you can check and refresh your credit score
+                upon becoming a member, you can check and refresh your <a href='#' class='underline'>credit score</a>
                 with a single click. CRED then proceeds to acquire your updated credit
-                score through a CIBIL score soft inquiry. on CRED, you can access your
+                score through a <a href='#' class='underline'>CIBIL score</a> soft inquiry. on CRED, you can access your
                 credit score data anytime without any extra charges. as a member,
                 this helps you keep regular checks on your credit score and re-evaluate
                 your spending patterns to maintain a healthy credit status. CRED offers
-                Equifax credit score checker, find your CRIF credit score for free,
-                Experian credit score checker for free.
+                <a href='#' class='underline'>Equifax credit score</a> checker, find your <a href='#' class='underline'>CRIF credit score</a> for free,
+                <a href='#' class='underline'>Experian credit score</a> checker for free.
             </div>
         </div>
 
@@ -423,8 +425,8 @@
                 banks supported on CRED
             </div>
             <div class="body-text">
-                CRED supports credit card bill payment for American Express, Standard
-                Chartered, Citibank, HSBC, HDFC, ICICI, SBI, AXIS, RBL, PNB, and other
+                CRED supports credit card bill payment for <a href='#' class='underline'>American Express</a>, <a href='#' class='underline'>Standard
+                Chartered</a>, <a href='#' class='underline'>Citibank</a>, <a href='#' class='underline'>HSBC</a>, <a href='#' class='underline'>HDFC</a>, <a href='#' class='underline'>ICICI</a>, <a href='#' class='underline'>SBI</a>, <a href='#' class='underline'>AXIS</a>, <a href='#' class='underline'>RBL</a>, <a href='#' class='underline'>PNB</a>, and other
                 top Indian banks. We support VISA, MasterCard, American Express & RuPay cards.
             </div>
         </div>
@@ -444,8 +446,8 @@
             <a href="#">compund interest calculator</a>
             <br><br>
             <span class="head-text">credit card bill payment:</span> 
-            <a href="#">American Express Standard Chartered</a>
-            <a href="#">HSBC</a>
+            <a href="#">American Express</a> 
+            <a href="#">Standard Chartered</a>
             <a href="#">HDFC</a>
             <a href="#">ICICI</a>
             <a href="#">SBI</a>       
@@ -461,13 +463,9 @@
         <div class="footer-top-container flex-container"> 
             <!--These lines were modified-->
             <div class="footer-top-left-container flex-container">
-                <div class="cred-logo-placeholder">
-                    <img src="/images/cred-logo-horizontal.webp">
-                </div>
+                <img src="/images/cred-logo-horizontal.webp" class="cred-logo-img">
     
-                <div class="security-logo-placeholder">
-                    <img src="/images/security-logos.webp">
-                </div>
+                <img src="/images/security-logos.webp" class="security-logo-img">
     
                 <div class="cred-encryption-text flex-container">
                     <div class="head-text cred-guarantee-text">
@@ -551,6 +549,7 @@
             </div>
 
         </div>
+
 
         <div class="footer-bottom-container flex-container">
 

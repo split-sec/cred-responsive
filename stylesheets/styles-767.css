@@ -286,6 +286,12 @@
     line-height: 34px;
 }
 
+.s-line3 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
 .button-s {
     font-size: 18px;
     letter-spacing: 0.3px;
@@ -307,13 +313,13 @@
     font-size: 65px;
     line-height: 55px;
     letter-spacing: -1.65px;
-    max-width: 450px;
-    padding-bottom: 80px;
+    width: 100%;
+    white-space: unset;
 }
 
 .trust-side-text-div {
     font-size: 18px;
-    font-family: gilroy-regular;
+    font-family: Gilroy-Regular;
     letter-spacing: 0px;
     line-height: 28px;
     margin-top: 20px;
@@ -373,17 +379,14 @@
     padding: 100px 60px;
 }
 
-.cred-logo-placeholder img {
+.cred-logo-img {
     width: 168px;
 }
 
-.security-logo-placeholder {
+.security-logo-img {
+    width: 290px;
     margin-top: 70px;
     margin-bottom: 25px;
-}
-
-.security-logo-placeholder img {
-    width: 290px;
 }
 
 .footer-top-center-container, .footer-top-right-container {

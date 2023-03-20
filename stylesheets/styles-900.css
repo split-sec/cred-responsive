@@ -270,15 +270,18 @@
     line-height: 64px;
     white-space: pre-line;
     opacity: 0.9;
+
     display: flex;
-    align-self: flex-end;
     flex: 1;
+
+    align-self: flex-end;
+    padding-bottom: 0;
 }
 
 .trust-side-text {
     margin-left: 30px;
     font-size: 18px;
-    padding-top: 20px;
+    padding-top: 0;
     font-family: Gilroy-Regular;
     letter-spacing: 0px;
     line-height: 28px;
@@ -373,6 +376,10 @@
     padding: 30px 60px;
 }
 
+.about-content .body-text {
+    margin-bottom: 0;
+}
+
 /************************
 *************************
 ******Footer section*****
@@ -392,22 +399,14 @@
     flex: 1;
 }
 
-.cred-logo-placeholder {
+.cred-logo-img {
     width: 168px;
 }
 
-.cred-logo-placeholder img {
-    width: 168px;
-}
-
-.security-logo-placeholder {
+.security-logo-img {
+    width: 290px;
     margin-top: 70px;
     margin-bottom: 25px;
-    width: 290px;
-}
-
-.security-logo-placeholder img {
-    width: 290px;
 }
 
 .footer-top-center-container, .footer-top-right-container {

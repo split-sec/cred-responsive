@@ -72,6 +72,8 @@
     font-family: Gilroy-Bold;
     font-size: 30px;
     width: unset;
+    line-height: 38px;
+    letter-spacing: -0.2px;
 }
 
 .button-download-CRED {
@@ -332,6 +334,7 @@
     flex: 1;
     align-self: flex-end;
     padding-right: 0;
+    padding-bottom: 0;
 
     letter-spacing: -1.15px;
 }
@@ -530,19 +533,11 @@ hr {
     flex: 1;
 }
 
-.cred-logo-placeholder {
-    margin: 0;
-}
-
-.cred-logo-placeholder img {
+.cred-logo-img{
     width: 168px;
 }
 
-.security-logo-placeholder {
-    margin: 0;
-}
-
-.security-logo-placeholder img {
+.security-logo-img {
     margin-top: 100px;
     margin-bottom: 40px;
     width: 405px;

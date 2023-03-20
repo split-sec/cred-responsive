@@ -40,22 +40,23 @@ a {
 ****************************/
 
 .toggle-navbar-screen {
-    position: fixed;
+    padding: 32px;
+    height: 100%;
+    width: 0;
+    position: absolute; 
+    z-index: 1;
+    right: 0;
+    top: 0;
     background-color: rgb(15, 15, 15);
-    display: none;
-    flex-direction: column;
-    transform: translateX(0px);
-    height: 100vh;
-    text-align: left;
-    padding: 2rem;
-    top: 0px;
-    left: 0px;
-    transition: transform 0.3s ease-in-out 0s;
-
-    width: 100%;
+    color: rgb(248, 248, 248);
+    overflow-y: hidden; 
+    transition: 1s;
+    display: block;
+    transition: transform 0.3 ease-in-out 0s;
     z-index: 1000;
 
-    overflow-y: hidden;
+    display: none;
+    transform: translateX(100%);
 }
 
 .tnc-section {
@@ -69,6 +70,97 @@ a {
     margin-bottom: 20px;
     border: 1px solid transparent;
 }
+
+.is-opened {
+    visibility: visible;
+    width: 100%;
+    transform: translateX(0px);
+}
+
+
+/****************************
+***Hamburger button section**
+****************************/
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    opacity: 0.7;
+    font: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+
+    z-index: 1002;
+
+    overflow: visible; }
+
+    .hamburger:hover {
+      opacity: 0.7; 
+    }
+    .hamburger.is-active:hover {
+      opacity: 0.7; 
+    }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: rgb(248,248,248); 
+    }
+  
+  .hamburger-box {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: 3px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 33px;
+      height: 3px;
+      background-color: rgb(248,248,248);
+      border-radius: 2px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+
+      /*
+     * Elastic
+     */
+  .hamburger--elastic .hamburger-inner {
+    top: 2px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .hamburger--elastic .hamburger-inner::before {
+      top: 10px;
+      transition: opacity 0.125s 0.275s ease; }
+    .hamburger--elastic .hamburger-inner::after {
+      top: 20px;
+      transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  
+  .hamburger--elastic.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(135deg);
+    transition-delay: 0.075s; }
+    .hamburger--elastic.is-active .hamburger-inner::before {
+      transition-delay: 0s;
+      opacity: 0; }
+    .hamburger--elastic.is-active .hamburger-inner::after {
+      transform: translate3d(0, -20px, 0) rotate(-270deg);
+      transition-delay: 0.075s; }
 
 /****************************
 ********Header Section*******
@@ -132,6 +224,10 @@ a {
     margin-right: 20px;
     color:rgb(248, 248, 248);
     opacity: 0.8;
+}
+
+.navbar-btn {
+    height: 32px;
 }
 
 .navbar-btn img{
@@ -465,6 +561,11 @@ Mobile Parallax Part
 
 .trust-main-text {
     font-size: 55px;
+    white-space: pre-line;
+    letter-spacing: -1.65px;
+    line-height: 47.5px;
+
+    padding-bottom: 80px;
 }
 
 .trust-side-text {
@@ -642,8 +743,7 @@ Mobile Parallax Part
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.5px;
-    padding-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
     opacity: 0.9;
 }   
 
@@ -652,8 +752,12 @@ Mobile Parallax Part
     margin-bottom: 70px;
 }
 
+.underline {
+    text-decoration: underline rgba(248, 248, 248, 0.9) solid 1px;
+}
+
 .hr-rbg {
-    opacity: 0.5;
+    opacity: 0.4;
     margin-bottom: 50px;
 }
 
@@ -664,6 +768,10 @@ Mobile Parallax Part
     border-right: 1px solid rgb(246, 246, 246);
     color:rgb(248, 248, 248);
     padding: 0 12px;
+}
+
+.special-about-content {
+    word-break: break-word;
 }
 
 .special-about-content a:first-child {
@@ -722,16 +830,13 @@ Mobile Parallax Part
     padding-left: 15px;
 }
 
-.cred-logo-placeholder img {
+.cred-logo-img {
     width: 70px;
 }
 
-.security-logo-placeholder {
-    margin: 50px 0 20px;
-}
-
-.security-logo-placeholder img {
+.security-logo-img {
     width: 250px;
+    margin: 50px 0 20px;
 }
 
 .cred-encryption-text {
@@ -742,6 +847,7 @@ Mobile Parallax Part
     font-size: 21px;
     letter-spacing: 0.5px;
     margin-bottom: 16px;
+    padding-top: 0;
 }
 
 .cred-guarantee-body {
@@ -755,7 +861,6 @@ Mobile Parallax Part
 }
 
 .footer-top-center-container, .footer-top-right-container {
-    /* flex-direction: column; */
     font-size: 20px;
     flex: 1;
     flex-direction: column;
@@ -774,11 +879,13 @@ Mobile Parallax Part
 
 .footer-top-right-container-2 {
     border-bottom: 0.5px solid rgb(255, 255, 255);
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .contain-head {
     justify-content: space-between;
+    align-items: center;
+
     line-height: 32px;
     margin-bottom: 20px;
     display: flex;
@@ -810,7 +917,7 @@ Mobile Parallax Part
     font-size: 12px;
     letter-spacing: normal;
     opacity: 0.4;
-    line-height: 32px;
+    line-height: 12px;
 
 
     margin-top: 30px;
@@ -819,21 +926,18 @@ Mobile Parallax Part
     padding: 0;
 }
 
-.rbg01:first-child {
-    padding: 0px 15px 0px 0px;
+.rbg01 {
+    padding: 0px 13px 0px 13px;
+    border-right: 1px solid rgb(246, 246, 246);
+
+    line-height: 23px;
+    letter-spacing: 0.5px;
 }
 
-.rbg01 {
-    padding: 0px 15px 0px 15px;
-    border-right: 1px solid rgb(246, 246, 246);
+.rbg01:first-child {
+    padding: 0px 15px 0px 0px;
 }
 
 .rbg01:last-child {
     border-right: none;
 }
-
-/********************
-*********************
-    Media queries
-*********************
-********************/
