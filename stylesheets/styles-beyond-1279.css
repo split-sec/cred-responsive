@@ -89,6 +89,8 @@
 
 .animation-section {
     height: 800px;
+    background-image: url(/images/video-bg.webp);
+    background-position: right;
 }
 
 .anime {
