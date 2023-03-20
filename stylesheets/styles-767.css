@@ -261,7 +261,7 @@
 
 .mockup-parallax {
     display: block;
-    min-height: 50vh;
+    min-height: 500px;
 }
 
 /************************
@@ -338,10 +338,16 @@
 
 #app-store-rating {
     font-size: 120px;
+    line-height: 90px;
 }
 
 .content {
     white-space: unset;
+}
+
+.left-text-container {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #app-store-text {
@@ -357,6 +363,10 @@
 .rating-ios {
     width: 150px;
     height: 23px;
+}
+
+.collapsible {
+    padding-top: 0;
 }
 
 /************************
