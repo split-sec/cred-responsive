@@ -220,6 +220,44 @@
 
 /************************
 *************************
+**Mobile mockup section**
+*************************
+************************/
+
+.mobile-mockup {
+    display: none;
+}
+
+/************************
+*************************
+Sliding parallax section*
+*************************
+************************/
+
+.p-animation-section {
+    display: flex;
+
+    padding: 60px 100px 100px;
+
+    justify-content: space-between;
+}
+
+.text-1 {
+    font-size: 70px;
+    line-height: 70px;
+}   
+
+.image-placeholder {
+    width: 272px;
+    height: 480px;
+}
+
+.changing-image {
+    width: 235px;
+}
+
+/************************
+*************************
 *Mockup parallax section*
 *************************
 ************************/
