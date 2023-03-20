@@ -239,10 +239,10 @@ Sliding parallax section*
 
     padding: 60px 100px 100px;
 
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.text-1 {
+.text1 {
     font-size: 70px;
     line-height: 70px;
 }   

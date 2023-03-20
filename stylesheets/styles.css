@@ -544,9 +544,12 @@ Mobile Parallax Part
     background-size: cover;
 
     padding: 240px 200px 300px;
+
+    justify-content: space-between;
 }
 
 .left-section {
+    width: 50%;
     flex-direction: column;
 }
 
@@ -586,8 +589,6 @@ Mobile Parallax Part
 }
 
 .image-placeholder {
-    width: 50%;
-
     position: sticky;
     top: 180px;
     width: 272px;
@@ -702,10 +703,11 @@ Mobile Parallax Part
     justify-content: center;
     margin-top: -20px;
     margin-bottom: -20px;
+    padding-bottom: 24px;
 }
 
 .rating-placeholder {
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 #app-store-rating {
