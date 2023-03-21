@@ -3,7 +3,7 @@ let sectionElem = document.getElementsByClassName("animation-section")[0];
 let imageHolderElem = document.getElementsByClassName("changing-image")[0];
 
 let options = { 
-    rootMargin: "-300px 0px -300px 0px",
+    rootMargin: "-100px 0px -100px 0px",
 };
 
 const iObserver = new IntersectionObserver((items) => {

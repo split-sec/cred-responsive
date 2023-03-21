@@ -51,7 +51,7 @@
     display: block;
 }
 
-.navbar-btn {
+.hamburger {
     display: none;
 }
 
@@ -243,6 +243,27 @@
     line-height: 150%;
 
     white-space: unset;
+}
+
+/****************************
+****Mobile mockup section****
+****************************/
+
+.mobile-mockup {
+    display: none;
+}
+
+/****************************
+***Parallax slider section***
+****************************/
+
+.text2 {
+    font-family: Gilroy-SemiBold;
+}
+
+.image-placeholder {
+    width: 350px;
+    height: 600px;
 }
 
 /****************************
