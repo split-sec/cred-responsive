@@ -31,6 +31,16 @@
     display: flex;
 }
 
+.float-navbar-placeholder {
+    height: 110px;
+    padding: 20px 200px;
+}
+
+.float-navbar img {
+    width: 49px;
+    height: 66px;
+}
+
 /***********************
 ************************
 *****Header section*****
@@ -481,6 +491,11 @@
     margin: 60px auto 0px;
 }
 
+.left-text-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .mySlides {
     padding: 16px;
 }
@@ -488,6 +503,20 @@
 .quote {
     font-size: 18px;
     padding-bottom: 32px;
+}
+
+.common-download-btn {
+    display: none;
+}
+
+.mySlides {
+    margin-top: 0;
+    text-align: center;
+}
+
+.dot-container {
+    padding-top: 0;
+    margin: auto;
 }
 
 /****************************
@@ -592,10 +621,11 @@ hr {
 .footer-top-center-container-1, .footer-top-right-container-1,
 .footer-top-center-container-2, .footer-top-right-container-2 {
     padding-right: 0;
+    margin-bottom: 30px;
 }
 
 .footer-top-center-container-1, .footer-top-right-container-1 {
-    margin-right: 150px;
+    margin-right: 120px;
 }
 
 .footer-body-text {

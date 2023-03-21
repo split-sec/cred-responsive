@@ -64,17 +64,27 @@ a {
 }
 
 .tnc-1, .tnc-2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
     padding: 19px 15px;
     position: relative;
     background-color: rgba(39, 43, 45, 0.43);
     margin-bottom: 20px;
     border: 1px solid transparent;
+    color: rgb(239, 235, 236);
+
+    line-height: 26px;
+    border-radius: 15px;
 }
 
 .is-opened {
-    visibility: visible;
+    display: block;
     width: 100%;
     transform: translateX(0px);
+}
+
+.add-overflow {
+    overflow: hidden;
 }
 
 
@@ -83,7 +93,7 @@ a {
 ****************************/
 
 .hamburger {
-    display: inline-block;
+    display: flex;
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
@@ -97,7 +107,9 @@ a {
 
     z-index: 1002;
 
-    overflow: visible; }
+    overflow: visible;
+
+    }
 
     .hamburger:hover {
       opacity: 0.7; 
@@ -183,12 +195,11 @@ a {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    padding: 0 40px;
+    padding: 33px 40px;
     height: 110px;
-    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.842);
 
-    transition: opacity 0.5s ease-out;
+    transition: top 0.5s ease-out;
     opacity: 0;
     top: -150px;
     overflow: hidden;
@@ -202,6 +213,8 @@ a {
 .float-navbar {
     align-items: center;
     justify-content: space-between;
+    margin: auto 0;
+
 }
 
 .float-navbar img {
